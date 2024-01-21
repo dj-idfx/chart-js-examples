@@ -19,12 +19,12 @@
             </h1>
 
             <p>
-                <a href="https://www.chartjs.org/" target="_blank" class="mx-2">
-                    Website
+                <a href="https://www.chartjs.org/" target="_blank" class="d-inline-block mx-2">
+                    Chart.js Website
                 </a>
 
-                <a href="https://github.com/chartjs/Chart.js" target="_blank" class="mx-2">
-                   GitHub
+                <a href="https://github.com/chartjs/Chart.js" target="_blank" class="d-inline-block mx-2">
+                    Chart.js GitHub
                 </a>
             </p>
         </div>
@@ -93,7 +93,7 @@
     <div class="row">
         <div class="col">
             <h2>doughnutChart</h2>
-            <h3 class="h4">Use an image as the canvas background.</h3>
+            <h3 class="h4">Use an image as the canvas background</h3>
             <p>
                 <a href="https://www.chartjs.org/docs/latest/configuration/canvas-background.html#image" target="_blank" class="link-dark">
                     chartjs.org/docs/latest/configuration/canvas-background.html#image
@@ -108,7 +108,43 @@
 
     <hr>
 
-    <!-- todo: https://www.chartjs.org/docs/latest/getting-started/usage.html#tree-shaking -->
+    <!-- deferredChart -->
+    <div class="row">
+        <div class="col">
+            <h2>deferredChart</h2>
+            <h3 class="h4">Defer initial animations until chart is scrolled inside the viewport</h3>
+            <p>
+                <a href="https://chartjs-plugin-deferred.netlify.app" target="_blank" class="link-dark">
+                    chartjs-plugin-deferred.netlify.app
+                </a>
+            </p>
+
+            <div class="position-relative" style="height: 50vh;">
+                <canvas id="deferredChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- fooChart -->
+    <div class="row">
+        <div class="col">
+            <h2>fooChart</h2>
+            <h3 class="h4">fooChart</h3>
+            <p>
+                <a href="#" target="_blank" class="link-dark">
+                    fooChart
+                </a>
+            </p>
+
+            <div class="position-relative" style="height: 50vh;">
+                <canvas id="fooChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- todo: Tree-shaking - https://www.chartjs.org/docs/latest/getting-started/usage.html#tree-shaking -->
 </div>
 
 <!-- Bootstrap JS -->
@@ -144,6 +180,7 @@
 <script type="module" src="js/charts/acquisitions.js"></script>
 <script type="module" src="js/charts/bubbles.js"></script>
 <script type="module" src="js/charts/doughnut.js"></script>
+<script type="module" src="js/charts/deferred.js"></script>
 
 </body>
 </html>
