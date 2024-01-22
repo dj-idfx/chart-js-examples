@@ -2,9 +2,24 @@
  * Bubble chart example,
  * using data from an api and implementing custom plugins.
  */
-import Chart from 'chart.js/auto';
 import { getDimensions } from '../api/api';
 import { chartAreaBorder, canvasBackgroundColor } from '../plugins/plugins';
+import {
+    Chart,
+    BubbleController,
+    PointElement,
+    LinearScale,
+    Legend,
+    Tooltip,
+} from 'chart.js'
+
+Chart.register(
+    BubbleController,
+    PointElement,
+    LinearScale,
+    Legend,
+    Tooltip,
+);
 
 (async function() {
     const bubbleChart = document.getElementById('bubbleChart');
@@ -85,7 +100,6 @@ import { chartAreaBorder, canvasBackgroundColor } from '../plugins/plugins';
                         })),
                     backgroundColor: '#aaf38d',
                     borderColor: '#3ba60e',
-
                 }
             ]
         }

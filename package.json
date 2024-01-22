@@ -1,16 +1,19 @@
 {
   "name": "chart-js-examples",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
+  "source": "src/index.html",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel --dist-dir dist",
+    "build": "parcel build --dist-dir build"
   },
   "devDependencies": {
-    "parcel": "^2.6.2"
+    "@parcel/transformer-sass": "^2.11.0",
+    "parcel": "^2.11.0"
   },
   "dependencies": {
     "@cubejs-client/core": "^0.34.37",
+    "bootstrap": "^5.3.2",
     "chart.js": "^4.4.1",
     "chartjs-plugin-deferred": "^2.0.0"
   }

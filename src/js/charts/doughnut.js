@@ -3,11 +3,28 @@
  * This way of giving the chart a background is only necessary if you want to export the chart with that specific background.
  * For normal use you can set the background more easily with CSS
  */
-import Chart from 'chart.js/auto';
 import { canvasBackgroundImage } from '../plugins/plugins';
+import {
+    Chart,
+    DoughnutController,
+    ArcElement,
+    Legend,
+    SubTitle,
+    Title,
+    Tooltip,
+} from 'chart.js'
+
+Chart.register(
+    DoughnutController,
+    ArcElement,
+    Legend,
+    SubTitle,
+    Title,
+    Tooltip,
+);
 
 const bgImage = new Image();
-bgImage.src = 'https://www.chartjs.org/img/chartjs-logo.svg';
+bgImage.src = 'https://newsroom.roularta.be/static/22012024/ICOON-RGB.png';
 
 (async function() {
     const doughnutChart = document.getElementById('doughnutChart');

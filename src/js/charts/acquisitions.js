@@ -2,8 +2,21 @@
  * Bar chart example with default options and plugins set to false.
  * Use data from an api or define a set in here.
  */
-import Chart from 'chart.js/auto';
 import { getAcquisitionsByYear } from '../api/api';
+import {
+    Chart,
+    BarController,
+    BarElement,
+    CategoryScale,
+    LinearScale,
+} from 'chart.js'
+
+Chart.register(
+    BarController,
+    BarElement,
+    CategoryScale,
+    LinearScale,
+);
 
 (async function() {
     const acquisitionsChart = document.getElementById('acquisitionsChart');

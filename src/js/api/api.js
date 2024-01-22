@@ -1,4 +1,4 @@
-// noinspection JSCheckFunctionSignatures
+// noinspection JSCheckFunctionSignatures,ES6CheckImport
 
 /**
  * Example data form an API
