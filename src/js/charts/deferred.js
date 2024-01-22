@@ -2,8 +2,29 @@
  * Line chart example with using the optional deferred plugin.
  * Once loaded, the plugin, available under the global ChartDeferred property, needs to be registered
  */
-import Chart from 'chart.js/auto';
 import ChatDeferred from 'chartjs-plugin-deferred';
+import {
+    Chart,
+    Colors,
+    LineController,
+    LineElement,
+    PointElement,
+    CategoryScale,
+    LinearScale,
+    Legend,
+    Tooltip,
+} from 'chart.js'
+
+Chart.register(
+    Colors,
+    LineController,
+    LineElement,
+    PointElement,
+    CategoryScale,
+    LinearScale,
+    Legend,
+    Tooltip,
+);
 
 (async function() {
     const deferredChart = document.getElementById('deferredChart');
